@@ -1,0 +1,17 @@
+{
+  "name": "react-native-nuance-android",
+  "version": "1.0.2",
+  "description": "A simple android library that uses Nuance ASR (Advanced Speech Recognition), and NLU (Nautral Language Understanding) for use in react-native.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native", "nuance", "ASR", "NLU","speech recognition", "natural language understanding"
+  ],
+  "author": "Samuel Horne",
+  "license": "",
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  }
+}
