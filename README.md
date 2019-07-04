@@ -1,13 +1,13 @@
 
-# react-native-nuance-nlu
+# react-native-nuance-android
 
 ## Getting started
 
-`$ npm install react-native-nuance-nlu --save`
+`$ npm install react-native-nuance-android --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-nuance-nlu`
+`$ react-native link react-native-nuance-android`
 
 ### Manual installation
 
@@ -18,12 +18,12 @@
   - Add `new NuancePackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-nuance-nlu'
-  	project(':react-native-nuance-nlu').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-nuance-nlu/android')
+  	include ':react-native-nuance-android'
+  	project(':react-native-nuance-android').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-nuance-android/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-nuance-nlu')
+      compile project(':react-native-nuance-android')
   	```
 ## Set up Nuance developer account
 
@@ -50,10 +50,10 @@ https://developer.nuance.com/public/index.php?task=mix
 
 ## Usage
 ```javascript
-import RNNuanceNlu from 'react-native-nuance-nlu';
+import RNNuanceAndroid from 'react-native-nuance-android';
 
 // Create a session using your Nuance details
-RNNuanceNlu.CreateSession(APP_ID, SERVER_HOST, SERVER_PORT, APP_KEY);
+RNNuanceAndroid.CreateSession(APP_ID, SERVER_HOST, SERVER_PORT, APP_KEY);
 
 // listen in to various events using DeviceEventEmitter (first import {DeviceEventEmitter} from 'react-native'
 DeviceEventEmitter.addListener('onRecognition', (event) => {
@@ -65,7 +65,7 @@ DeviceEventEmitter.addListener('onStateChange', (event) => {
 	console.log(event.state);  
 });
 // then call 'startAsr' with language, detection type, and recognition type to start recording and processing
-RNNuanceNlu.StartAsr('eng-USA', "SHORT", "DICTATION");
+RNNuanceAndroid.StartAsr('eng-USA', "SHORT", "DICTATION");
 
 ```
 
