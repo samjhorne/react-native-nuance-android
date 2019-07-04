@@ -1,11 +1,14 @@
 {
   "name": "react-native-nuance-android",
   "version": "1.0.3",
+  "homepage":"https://github.com/shmoogems/react-native-nuance-android",
   "description": "A simple android library that uses Nuance ASR (Advanced Speech Recognition), and NLU (Nautral Language Understanding) for use in react-native.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "bugs":{"url":"https://github.com/shmoogems/react-native-nuance-android/issues"},
+  "repository": {
+	  "type": "git",
+	  "url": "https://github.com/shmoogems/react-native-nuance-android.git"
+	},
   "keywords": [
     "react-native",
     "nuance",
@@ -15,7 +18,7 @@
     "natural language understanding"
   ],
   "author": "Samuel Horne",
-  "license": "",
+  "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2"
   }
